@@ -55,24 +55,38 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://danushkv.github.io/profile/" target="_blank">Danush Kumar Venkatesh</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://scholar.google.com/citations?user=Ue5BUkoAAAAJ&hl=en" target="_blank">Isabel Funke</a><sup>1</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://scholar.google.de/citations?user=wMXohjwAAAAJ&hl=en" target="_blank">Micha Pfeiffer</a><sup>1</sup>,
                   </span>
+                 <span class="author-block">
+                    <a href="https://fionakolbinger.github.io/" target="_blank">Fiona Kolbinger</a><sup>2</sup>,
+                  </span>
+                  <span class="author-block">
+                        <a href="" target="_blank">Hanna Maria Schmeiser</a><sup>3</sup>,
+                      </span>
                   </div>
+                  <span class="author-block">
+                    <a href="https://www.researchgate.net/profile/Marius-Distler" target="_blank">Marius Distler</a><sup>3</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.de/citations?user=uy_1E4gAAAAJ&hl=de" target="_blank">Jürgen Weitz</a><sup>3</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://www.nct-dresden.de/en/research/departments-and-groups/translational-surgical-oncology/translational-surgical-oncology" target="_blank">Stefanie Speidel</a><sup>1</sup>,
+                  </span>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup>Department of Translational Surgical Oncology, NCT Dresden,<sup>2</sup>Purdue University,<sup>3</sup>University Hospital Dresden<br>MICCAI 2025 (Early accept) </span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2505.09858" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -82,6 +96,7 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
+                    <!--
                     <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -91,10 +106,11 @@
                       <span>Supplementary</span>
                     </a>
                   </span>
-
+                  -->
+                      
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://gitlab.com/nct_tso_public/surgvgen" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -105,7 +121,7 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/2505.09858" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -126,13 +142,9 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
+      <img src="static/images/n_method.png" alt="Method Illustration" style="display:block; margin: 20px auto; max-width: 100%;"> 
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Disentangled spatial and temporaling modeling to generate surgical videos
       </h2>
     </div>
   </div>
@@ -147,7 +159,23 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+          Computer-assisted interventions can improve intraoperative
+          guidance, particularly through deep learning methods that harness the
+          spatiotemporal information in surgical videos. However, the severe data
+          imbalance often found in surgical video datasets hinders the development
+          of high-performing models. In this work, we aim to overcome the data im-
+          balance by synthesizing surgical videos. We propose a unique two-stage,
+          text-conditioned diffusion-based method to generate high-fidelity surgi-
+          cal videos for under-represented classes. Our approach conditions the
+          generation process on text prompts and decouples spatial and temporal
+          modeling by utilizing a 2D latent diffusion model to capture spatial con-
+          tent and then integrating temporal attention layers to ensure temporal
+          consistency. Furthermore, we introduce a rejection sampling strategy to
+          select the most suitable synthetic samples, effectively augmenting exist-
+          ing datasets to address class imbalance. We evaluate our method on two
+          downstream tasks—surgical action recognition and intra-operative event
+          prediction—demonstrating that incorporating synthetic videos from our
+          approach substantially enhances model performance.   
           </p>
         </div>
       </div>
@@ -157,97 +185,52 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+      <h2 class="title is-3">Generated GIF Grid</h2>
+      <!-- Row 1 -->
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <img src="static/gifs/gif1.gif" alt="GIF 1">
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
+        <div class="column has-text-centered">
+          <img src="static/gifs/gif2.gif" alt="GIF 2">
         </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+        <div class="column has-text-centered">
+          <img src="static/gifs/gif3.gif" alt="GIF 3">
         </div>
       </div>
+      <h3 class="subtitle has-text-centered">Caption for Row 1</h3>
+
+      <!-- Row 2 -->
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <img src="static/gifs/gif4.gif" alt="GIF 4">
+        </div>
+        <div class="column has-text-centered">
+          <img src="static/gifs/gif5.gif" alt="GIF 5">
+        </div>
+        <div class="column has-text-centered">
+          <img src="static/gifs/gif6.gif" alt="GIF 6">
+        </div>
+      </div>
+      <h3 class="subtitle has-text-centered">Caption for Row 2</h3>
+
+      <!-- Row 3 -->
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <img src="static/gifs/gif7.gif" alt="GIF 7">
+        </div>
+        <div class="column has-text-centered">
+          <img src="static/gifs/gif8.gif" alt="GIF 8">
+        </div>
+        <div class="column has-text-centered">
+          <img src="static/gifs/gif9.gif" alt="GIF 9">
+        </div>
+      </div>
+      <h3 class="subtitle has-text-centered">Caption for Row 3</h3>
     </div>
   </div>
 </section>
@@ -259,6 +242,7 @@
 
 
 <!-- Paper poster -->
+<!--
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
@@ -270,6 +254,7 @@
       </div>
     </div>
   </section>
+-->
 <!--End paper poster -->
 
 
@@ -277,7 +262,12 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{venkatesh2025mission,
+  title={Mission Balance: Generating Under-represented Class Samples using Video Diffusion Models},
+  author={Venkatesh, Danush Kumar and Funke, Isabel and Pfeiffer, Micha and Kolbinger, Fiona and Schmeiser, Hanna Maria and Weitz, Juergen and Distler, Marius and Speidel, Stefanie},
+  journal={arXiv preprint arXiv:2505.09858},
+  year={2025}
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
